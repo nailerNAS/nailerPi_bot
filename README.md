@@ -7,7 +7,7 @@
   * screen (Optional, needed for screen.sh script to work; recommended anyways)
   
   Raspbian/Ubuntu/Debian derivatives:
-    sudo apt update && sudo apt install python3 wakeonlan python3-pip screen -y
+    ```sudo apt update && sudo apt install python3 wakeonlan python3-pip screen -y```
 
 # Python requirements:
   * pyTelegramBotAPI
