@@ -13,9 +13,9 @@
   * pyTelegramBotAPI
   
   If you have pip3 installed (python3-pip):
-    pip3 install --user pytelegrambotapi <--Recommended
+    ```pip3 install --user pytelegrambotapi``` <--Recommended
     or
-    sudo pip3 install pytelegrambotapi <--Installs the lib system-wide
+    ```sudo pip3 install pytelegrambotapi``` <--Installs the lib system-wide
 
 # config.py
   Modify this file with **your own** Bot Token [@BotFather](https://telegram.me/botfather)
