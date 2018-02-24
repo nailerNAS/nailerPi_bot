@@ -15,6 +15,11 @@ bot = telebot.TeleBot(TOKEN, num_threads=1, skip_pending=True)
 
 pi = NailerPI()
 
+
+'''
+Change text values in second column to ypur desired
+'''
+
 buttons = \
     {
         'shutdown': 'Shutdown',
