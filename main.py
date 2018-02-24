@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 
-import gc
 import logging
 from time import sleep
 
@@ -8,8 +7,6 @@ import telebot
 
 from config import ADMIN, TOKEN
 from remotes import NailerPI
-
-gc.enable()
 
 log = telebot.logger
 telebot.logger.setLevel(logging.INFO)
