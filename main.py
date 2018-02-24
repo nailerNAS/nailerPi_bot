@@ -89,7 +89,7 @@ def button_handler(chat_id, msg_text):
 
 
 def command_handler(chat_id, command):
-    bot.send_message(chat_id, fixed(pi.run(command)))
+    bot.send_message(chat_id, fixed(pi.run(command)), parse_mode='markdown')
 
 
 def message_handler(messages):
