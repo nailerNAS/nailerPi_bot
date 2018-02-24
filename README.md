@@ -25,9 +25,9 @@
   Additionally you can change buttons text in main.py at the beginning
 
 # Startup
-  There are two scripts: start.sh and screen.sh\
-  * start.sh launches the bot and restarts it in case if bot stops for any reason (like unhandled exception)\
-  * screen.sh simply launches start.sh in the background by using Linux screen. You can reattach to that background console session by running ```screen -r nailerpi```. The ```nailerpi``` name of screen can be modified in screen.sh\
+  There are two scripts: start.sh and screen.sh
+  * start.sh launches the bot and restarts it in case if bot stops for any reason (like unhandled exception)
+  * screen.sh simply launches start.sh in the background by using Linux screen. You can reattach to that background console session by running ```screen -r nailerpi```. The ```nailerpi``` name of screen can be modified in screen.sh
   
   To make your bot start automatically on boot, run ```crontab -e``` and add this to last line:\
     ```@reboot sh /home/pi/nailerpi/screen.sh >/dev/null 2>&1```\
