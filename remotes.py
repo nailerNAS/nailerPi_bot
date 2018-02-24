@@ -51,14 +51,14 @@ class NailerPI:
     
 
     def ethernet(self):
-        return self.run('ifconfig {}'.format(self.eth0))
+        return self.run('/sbin/ifconfig {}'.format(self.eth0))
     
     def wireless(self):
-        return self.run('ifconfig {}'.format(self.wlan0))
+        return self.run('/sbin/ifconfig {}'.format(self.wlan0))
     
     def ifconfig(self):
-        return self.run('ifconfig')
+        return self.run('/sbin/ifconfig')
 
 
     def wol(self):
-        return self.run('wakeonlan {}'.format(self.mac))
+        return self.run('/sbin/wakeonlan {}'.format(self.mac))
