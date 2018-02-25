@@ -57,4 +57,4 @@ class NailerPI:
         return self.run('/sbin/ifconfig')
 
     def wol(self):
-        return self.run('/sbin/wakeonlan {}'.format(self.mac))
+        return self.run('wakeonlan {}'.format(self.mac))
