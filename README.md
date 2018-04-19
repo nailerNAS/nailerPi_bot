@@ -1,13 +1,13 @@
 # nailerPi_bot
 
 # Linux requirements:
-  * wakeonlan
+  * etherwake
   * python3
   * pip3 (Optional, needed for easy installation of pyTelegramBotAPI lib)
   * screen (Optional, needed for screen.sh script to work; recommended anyways)
   
   Raspbian/Ubuntu/Debian derivatives:\
-    ```sudo apt update && sudo apt install python3 wakeonlan python3-pip screen -y```
+    ```sudo apt update && sudo apt install python3 etherwake python3-pip screen -y```
 
 # Python requirements:
   * pyTelegramBotAPI
