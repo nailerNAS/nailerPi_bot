@@ -32,3 +32,39 @@
   To make your bot start automatically on boot, run ```crontab -e``` and add this to last line:\
     ```@reboot sh /home/pi/nailerpi/screen.sh >/dev/null 2>&1```\
     where */home/pi/nailerpi* is path to your bot
+
+# Startup - a better way
+  The better way of running your bot at startup is by running him as a service\
+
+  Create a new service file:
+  ```sudo nano /etc/systemd/system/nailerpi.service```\
+  The content should look like this:\
+```
+[Unit]
+After=network.target
+Description=nailerPi Telegram Bot for simple controls
+
+[Service]
+Type=simple
+ExecStart=/home/pi/nailerpi/env/bin/python main.py
+WorkingDirectory=/home/pi/nailerpi
+User=pi
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+```
+Replace the pythonpath with your own, for example ```/usr/bin/python3```\
+Also change the working directory to the one where you've downloaded the bot (where the **<span>main.py</span>** file is)\
+\
+After creating this file, run these commands:
+  ```
+  sudo systemctl daemon-reload
+  sudo systemctl enable nailerpi
+  ```
+If everything's good, your bot will now start automatically when your system boots, restart automatically upon crashes. To launch him right away (or relaunch) you can use
+```
+sudo systemctl restart nailerpi
+```
+
+If you're using SystemD instead of cron, you don't need the `start.sh` and `screen.sh` files, and also you don't have to install Linux `screen`
