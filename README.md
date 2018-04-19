@@ -67,4 +67,4 @@ If everything's good, your bot will now start automatically when your system boo
 sudo systemctl restart nailerpi
 ```
 
-If you're using SystemD instead of cron, you don't need the `start.sh` and `screen.sh` files, and also you don't have to install Linux `screen`
+If you're using SystemD instead of cron, you don't need the `start.sh` and `screen.sh` files, and also you don't have to install Linux `screen`, though it's useful anyways
