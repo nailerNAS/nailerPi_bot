@@ -34,11 +34,11 @@
     where */home/pi/nailerpi* is path to your bot
 
 # Startup - a better way
-  The better way of running your bot at startup is by running him as a service\
+  The better way of running your bot at startup is by running him as a service
 
   Create a new service file:
   ```sudo nano /etc/systemd/system/nailerpi.service```\
-  The content should look like this:\
+  The content should look like this:
 ```
 [Unit]
 After=network.target
