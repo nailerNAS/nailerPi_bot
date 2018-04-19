@@ -57,4 +57,11 @@ class NailerPI:
         return self.run('/sbin/ifconfig')
 
     def wol(self):
-        return self.run('wakeonlan {}'.format(self.mac))
+        # return self.run('sudo /usr/sbin/etherwake {}'.format(self.mac))
+
+        res = self.run('sudo /usr/sbin/etherwake -D {}'.format(self.mac))
+
+        if 'Sendto worked' in res:
+            return 'Magic packet sent'
+        else:
+            return 'An error occured\n{}'.format(res)
