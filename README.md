@@ -17,7 +17,7 @@
     or\
     ```sudo pip3 install pytelegrambotapi``` <--Installs the lib system-wide
 
-# config.py
+# <span>config.py</span>
   Modify this file with **your own** Bot Token [@BotFather](https://telegram.me/botfather)\
   Use **your** Telegram account ID [@getidsbot](https://telegram.me/getidsbot)\
   Use **your own** MAC address and interface names (on Raspbian you don't need to change interface names)\
