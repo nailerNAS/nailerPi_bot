@@ -10,7 +10,7 @@
     ```sudo apt update && sudo apt install python3 etherwake python3-pip screen -y```
 
 # Python requirements:
-  * pyTelegramBotAPI
+  * [pyTelegramBotAPI](https://github.com/eternnoir/pyTelegramBotAPI)
   
   If you have pip3 installed (python3-pip):
     ```pip3 install --user pytelegrambotapi``` <--Recommended\
