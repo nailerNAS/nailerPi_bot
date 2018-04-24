@@ -59,7 +59,7 @@ class NailerPI:
     def wol(self):
         # return self.run('sudo /usr/sbin/etherwake {}'.format(self.mac))
 
-        res = self.run('sudo /usr/sbin/etherwake -D {}'.format(self.mac))
+        res = self.run('sudo /usr/sbin/etherwake -i {} -D {}'.format(self.eth0, self.mac))
 
         if 'Sendto worked' in res:
             return 'Magic packet sent'
