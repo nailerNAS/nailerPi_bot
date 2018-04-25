@@ -64,7 +64,7 @@ while True:
         config_string = ''
         
         for key in config.keys():
-            config_string += '%s = ' % (key)
+            config_string += '%s = ' % (key.upper())
             config_string += str(config[key]) if try_int(config[key]) else "'%s'" % (config[key])
             config_string += '\n'
         
